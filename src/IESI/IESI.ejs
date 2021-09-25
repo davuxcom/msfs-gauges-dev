@@ -1,0 +1,16 @@
+
+<script type="text/html" id="HX2_IESI">
+  <div id="Electricity" state="off">
+    <div id="Mainframe">
+        <div id="time_div">CURRENT TIME</div>
+    </div>
+  </div>
+</script>
+
+<% for (let js in htmlWebpackPlugin.files.js) { %>
+    <script src="<%= htmlWebpackPlugin.files.js[js] %>"></script>
+<% } %>
+
+<% for (let css in htmlWebpackPlugin.files.css) { %>
+    <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css[css] %>">
+<% } %>
